@@ -133,3 +133,4 @@ dmypy.json
 .vscode/
 data.db
 real-estate-firebase-adminsdk.json
+.vercel
