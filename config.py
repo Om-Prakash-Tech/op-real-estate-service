@@ -5,7 +5,7 @@ load_dotenv()
 
 FLASK_ENV = os.getenv('FLASK_ENV')
 
-cred = credentials.Certificate('real-estate-07b-firebase-adminsdk-vdspe-8bbe8c1ee6.json')
+cred = credentials.Certificate('real-estate-firebase-adminsdk.json')
 initialize_app(cred)
 
 db = firestore.client()
