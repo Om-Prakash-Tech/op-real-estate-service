@@ -11,7 +11,7 @@ def get_project_data(project_id):
         project_data = doc.to_dict()
         return {
             "projectId": project_id,
-            "projectName": project_data.get("projectName"),
+            "projectName": project_data.get("name"),
             "address": project_data.get("address"),
             "dueDate": project_data.get("dueDate"),
             "budget": project_data.get("budget")

@@ -61,7 +61,7 @@ def get_projects_by_contractor_id(contractor_id):
             if contractor_id in project_data.get('contractors', []):
                 project = {
                     "projectId": project_doc.id,
-                    "projectName": project_data.get("projectName"),
+                    "projectName": project_data.get("name"),
                     "address": project_data.get("address"),
                     "dueDate": project_data.get("dueDate"),
                     "budget": project_data.get("budget")
