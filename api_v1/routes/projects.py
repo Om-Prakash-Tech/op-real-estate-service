@@ -12,7 +12,7 @@ def create_project():
     try:
         data = request.get_json()
         
-        data['dueDate'] = parser.parse(data['dueDate'])
+        # data['dueDate'] = parser.parse(data['dueDate'])
         data['createdAt'] = datetime.now(timezone.utc)
         data['updatedAt'] = datetime.now(timezone.utc)
 
